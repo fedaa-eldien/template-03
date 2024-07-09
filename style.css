@@ -238,6 +238,9 @@ section.team .container .member .info{text-align:center;padding:20px}
 .latest-events .container .info p{font-size:18px;padding:0 10px}
 .stats .title{font-size:30px}
 }
+@media (max-width:375px){
+header nav>ul>li>a{padding:0 5px;font-size:14px}
+}
 .stats .container{gap:20px;position:relative;z-index:3}
 .stats .container .card{padding:30px;background-color:#fff;position:relative}
 .stats .container .card::after,.stats .container .card::before{content:"";position:absolute;width:3px;height:0;background-color:var(--main-color);transition:.7s}
@@ -322,4 +325,19 @@ footer>p{color:#fff;text-align:center;border-top:1px solid #444;padding:25px 0;m
 @keyframes clange-background{
 0%,100%{background-image:url(images/customize-plan-background1.jpg)}
 50%{background-image:url(images/discount-background2.jpg)}
+}
+@media (max-width: 267px) {
+  header,section,.customize-plan,footer{
+    display: none;
+  }
+  .small-screen{
+    display: block !important;
+    height: 100vh;
+    padding: 35% 25px 0;
+    background-color: #111829;
+    color: #fff;
+    font-weight: bold;
+    line-height: 2;
+    text-align: center;
+  }
 }
